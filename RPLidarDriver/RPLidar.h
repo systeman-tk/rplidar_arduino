@@ -53,7 +53,7 @@ public:
     ~RPLidar();
 
     // open the given serial interface and try to connect to the RPLIDAR
-    bool begin(HardwareSerial &serialobj);
+    bool begin(HardwareSerial &serialobj,_u32 baud = RPLIDAR_SERIAL_BAUDRATE);
 
     // close the currently opened serial interface
     void end();
